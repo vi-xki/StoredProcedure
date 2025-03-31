@@ -62,11 +62,11 @@ $route['orders/edit/(:num)'] = 'orders/edit/$1';
 $route['orders/delete/(:num)'] = 'orders/delete/$1';
 
 // User routes
-$route['users'] = 'users/index';
-$route['users/create'] = 'users/create';
-$route['users/view/(:num)'] = 'users/view/$1';
-$route['users/edit/(:num)'] = 'users/edit/$1';
-$route['users/delete/(:num)'] = 'users/delete/$1';
+// $route['users'] = 'users/index';
+// $route['users/create'] = 'users/create';
+// $route['users/view/(:num)'] = 'users/view/$1';
+// $route['users/edit/(:num)'] = 'users/edit/$1';
+// $route['users/delete/(:num)'] = 'users/delete/$1';
 
 // Product routes
 $route['products'] = 'products/index';
@@ -76,6 +76,6 @@ $route['products/edit/(:num)'] = 'products/edit/$1';
 $route['products/delete/(:num)'] = 'products/delete/$1';
 
 // Authentication routes
-$route['login'] = 'auth/login';
-$route['login/logout'] = 'auth/logout';
-$route['register'] = 'auth/register';
+// $route['login'] = 'auth/login';
+// $route['login/logout'] = 'auth/logout';
+// $route['register'] = 'auth/register';

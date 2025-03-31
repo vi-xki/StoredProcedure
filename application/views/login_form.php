@@ -92,7 +92,7 @@
         .then(data => {
             if (data.success) {
                 alert('Login successful!');
-                window.location.href = '<?= base_url() ?>admin/user';
+                window.location.href = '<?= base_url() ?>orders';
             } else {
                 alert('Login failed: ' + data.message);
             }
