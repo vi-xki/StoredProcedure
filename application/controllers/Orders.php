@@ -68,6 +68,7 @@ class Orders extends CI_Controller {
         $this->load->view('orders/index', $data);
         $this->load->view('templates/footer');
     }
+
     
     public function view($id) {
         // Get order details
@@ -185,5 +186,29 @@ class Orders extends CI_Controller {
         
         // Redirect to orders list
         redirect('orders');
+    }
+
+    public function WYSIWYG() {
+        // WYSIWYG stands for "What You See Is What You Get" - it's a type of editor that allows you to create and edit content in a way that resembles how it will appear in the final published form.
+        $this->load->view('wysiwyg.php');
+    }
+    public function save_content() {
+        $content = $this->input->post('content');
+
+        echo "<pre>";
+        print_r($content);exit();
+        
+        // Validate and sanitize the content as needed
+        
+        // Save to database
+        $data = array(
+            'content' => $content,
+            'created_at' => date('Y-m-d H:i:s')
+        );
+        
+        $this->order_model->save_content($data);
+        
+        // Redirect or show success message
+        redirect('your_controller/success');
     }
 }

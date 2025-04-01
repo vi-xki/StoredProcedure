@@ -56,6 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 // Order routes
 $route['orders'] = 'orders/index';
+$route['WYSIWYG'] = 'orders/WYSIWYG';
 $route['orders/create'] = 'orders/create';
 $route['orders/view/(:num)'] = 'orders/view/$1';
 $route['orders/edit/(:num)'] = 'orders/edit/$1';
